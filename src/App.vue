@@ -21,9 +21,7 @@
       </div>
     </main>
 
-    <footer>
-      <p>&copy; {{ currentYear }} Today in History</p>
-    </footer>
+   
   </div>
 </template>
 
