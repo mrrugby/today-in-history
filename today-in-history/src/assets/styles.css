@@ -1,0 +1,114 @@
+/* src/assets/styles.css */
+
+/* CSS Variables for Light and Dark Themes */
+:root {
+  --header-bg: #1f1f1f;
+  --header-text: #ffffff;
+  --card-bg: #2c2c2c;
+  --card-text: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  --card-hover-shadow: rgba(0, 0, 0, 0.7) 0px 4px 12px;
+  --accent-color: #ff9800;
+  --link-color: #03a9f4;
+  --spinner-bg: #f3f3f3;
+  --spinner-color: #ff9800;
+  --error-bg: #ffcccc;
+  --error-text: #900;
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+}
+
+.dark {
+  --header-bg: #1f1f1f;
+  --header-text: #ffffff;
+  --card-bg: #2c2c2c;
+  --card-text: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  --card-hover-shadow: rgba(0, 0, 0, 0.7) 0px 4px 12px;
+  --accent-color: #ff9800;
+  --link-color: #03a9f4;
+  --spinner-bg: #f3f3f3;
+  --spinner-color: #ff9800;
+  --error-bg: #ffcccc;
+  --error-text: #900;
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+}
+
+.light {
+  --header-bg: #f5f5f5;
+  --header-text: #333333;
+  --card-bg: #ffffff;
+  --card-text: #333333;
+  --card-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  --card-hover-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  --accent-color: #ff5722;
+  --link-color: #2196f3;
+  --spinner-bg: #f3f3f3;
+  --spinner-color: #2196f3;
+  --error-bg: #ffdddd;
+  --error-text: #b30000;
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+body, html, #app {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-container section {
+  margin-bottom: 2rem;
+}
+
+.events-container h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+}
+
+/* Smooth Transitions */
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
